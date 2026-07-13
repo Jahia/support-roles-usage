@@ -1,0 +1,18 @@
+# Maven
+target/
+
+# Node / Yarn (frontend-maven-plugin installs these locally)
+node/
+node_modules/
+npm-debug.log*
+yarn-error.log
+*.log
+
+# Webpack build output (generated into src/main/resources by `yarn build`)
+src/main/resources/javascript/apps/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store
