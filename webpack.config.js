@@ -32,14 +32,8 @@ module.exports = (env, argv) => {
                 {
                     test: /\.jsx?$/,
                     include: [path.join(__dirname, 'src')],
-                    loader: 'babel-loader',
-                    options: {
-                        presets: [
-                            ['@babel/preset-env', {modules: false}],
-                            '@babel/preset-react'
-                        ],
-                        plugins: ['@babel/plugin-syntax-dynamic-import']
-                    }
+                    loader: 'babel-loader'
+                    // Babel presets/plugins live in babel.config.js so webpack and eslint share one config.
                 },
                 {
                     test: /\.css$/,

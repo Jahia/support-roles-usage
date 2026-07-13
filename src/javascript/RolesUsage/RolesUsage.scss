@@ -257,3 +257,53 @@
     padding: 6px 14px;
     cursor: pointer;
 }
+
+.ru_sortBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0;
+    background: none;
+    border: none;
+    font: inherit;
+    font-weight: 600;
+    color: #262626;
+    cursor: pointer;
+    text-align: left;
+
+    &:hover {
+        color: #0066a1;
+        text-decoration: underline;
+    }
+}
+
+.ru_sortIndicator {
+    font-size: 0.7rem;
+    color: #0066a1;
+}
+
+.ru_filterRow {
+    td {
+        padding: 4px 10px 8px;
+        border-bottom: 2px solid #d9d9d9;
+        vertical-align: top;
+    }
+}
+
+.ru_filterInput,
+.ru_filterSelect {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px 6px;
+    font-size: 0.8rem;
+    color: #262626;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+
+    &:focus-visible {
+        outline: 2px solid #0077cc;
+        outline-offset: 1px;
+        border-color: #0077cc;
+    }
+}
