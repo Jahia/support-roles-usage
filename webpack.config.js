@@ -6,6 +6,9 @@ const {CycloneDxWebpackPlugin} = require('@cyclonedx/webpack-plugin');
 const packageJson = require('./package.json');
 
 const moduleName = 'support-roles-usage';
+// Module Federation container name — must be a valid JS identifier because it is
+// assigned to `appShell.remotes.<federationName>` in the generated remoteEntry.js.
+const federationName = 'supportRolesUsage';
 
 module.exports = (env, argv) => {
     const isDev = argv.mode !== 'production';
@@ -39,6 +42,10 @@ module.exports = (env, argv) => {
                     }
                 },
                 {
+                    test: /\.css$/,
+                    use: ['style-loader', 'css-loader']
+                },
+                {
                     test: /\.scss$/,
                     use: [
                         'style-loader',
@@ -46,7 +53,7 @@ module.exports = (env, argv) => {
                             loader: 'css-loader',
                             options: {
                                 modules: {
-                                    localIdentName: '[name]__[local]___[hash:base64:5]'
+                                    localIdentName: '[local]'
                                 },
                                 sourceMap: isDev
                             }
@@ -66,23 +73,26 @@ module.exports = (env, argv) => {
         plugins: [
             new CleanWebpackPlugin(),
             new ModuleFederationPlugin({
-                name: moduleName,
+                name: federationName,
                 filename: 'remoteEntry.js',
-                library: {type: 'assign', name: `appShell.remotes.${moduleName}`},
+                library: {type: 'assign', name: `appShell.remotes.${federationName}`},
                 exposes: {
                     './init': path.resolve(__dirname, 'src/javascript/init.js')
                 },
                 remotes: {
                     '@jahia/app-shell': 'appShell'
                 },
+                // All of these are provided by the Jahia app-shell (host) at runtime, so we
+                // share them as singletons WITHOUT bundling a fallback (import: false). This keeps
+                // the module lean and guarantees a single shared instance of React, Apollo, etc.
                 shared: {
-                    react: {singleton: true, requiredVersion: packageJson.dependencies.react},
-                    'react-dom': {singleton: true, requiredVersion: packageJson.dependencies['react-dom']},
-                    'react-i18next': {singleton: true, requiredVersion: packageJson.dependencies['react-i18next']},
-                    i18next: {singleton: true, requiredVersion: packageJson.dependencies.i18next},
-                    '@apollo/client': {singleton: true, requiredVersion: packageJson.dependencies['@apollo/client']},
-                    '@jahia/moonstone': {singleton: true, requiredVersion: packageJson.dependencies['@jahia/moonstone']},
-                    '@jahia/ui-extender': {singleton: true, requiredVersion: packageJson.dependencies['@jahia/ui-extender']}
+                    react: {singleton: true, import: false, requiredVersion: packageJson.dependencies.react},
+                    'react-dom': {singleton: true, import: false, requiredVersion: packageJson.dependencies['react-dom']},
+                    'react-i18next': {singleton: true, import: false, requiredVersion: packageJson.dependencies['react-i18next']},
+                    i18next: {singleton: true, import: false, requiredVersion: packageJson.dependencies.i18next},
+                    '@apollo/client': {singleton: true, import: false, requiredVersion: packageJson.dependencies['@apollo/client']},
+                    '@jahia/moonstone': {singleton: true, import: false, requiredVersion: packageJson.dependencies['@jahia/moonstone']},
+                    '@jahia/ui-extender': {singleton: true, import: false, requiredVersion: packageJson.dependencies['@jahia/ui-extender']}
                 }
             }),
             new CopyWebpackPlugin({

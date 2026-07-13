@@ -1,45 +1,259 @@
-// Imports
-import ___CSS_LOADER_API_SOURCEMAP_IMPORT___ from "../../../node_modules/css-loader/dist/runtime/sourceMaps.js";
-import ___CSS_LOADER_API_IMPORT___ from "../../../node_modules/css-loader/dist/runtime/api.js";
-var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, `.ru_sr_only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0}.ru_container{height:100%;overflow-y:auto;box-sizing:border-box;padding:24px 32px}.ru_container button:focus-visible{outline:2px solid #07c;outline-offset:2px}.ru_content{max-width:1100px}.ru_pageHeader{margin:0 0 28px;padding-bottom:16px;border-bottom:2px solid #d9d9d9}.ru_pageHeader h2{font-size:1.6rem;font-weight:600;margin:0;color:#262626}.ru_description{display:block;margin-top:8px;color:#575757}.ru_panel{margin-bottom:28px;border:1px solid #d9d9d9;border-radius:4px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.06);overflow:hidden}.ru_panelHeading{padding:12px 16px;background:#f5f5f5;border-bottom:1px solid #d9d9d9}.ru_panelHeading h3{font-size:1.05rem;font-weight:600;margin:0;color:#262626}.ru_panelBody{padding:16px}.ru_hint{color:#575757;font-size:.85rem;margin:4px 0 12px}.ru_loading{padding:16px 0}.ru_table{width:100%;border-collapse:collapse;font-size:.85rem}.ru_table th{text-align:left;padding:6px 10px;border-bottom:2px solid #d9d9d9;white-space:nowrap}.ru_table td{padding:6px 10px;border-bottom:1px solid #ececec;vertical-align:top}.ru_roleName{font-weight:600;white-space:nowrap}.ru_pathCell{word-break:break-all;font-family:monospace;font-size:.8rem}.ru_badge{display:inline-block;padding:1px 8px;margin-right:4px;border-radius:10px;font-size:.75rem;font-weight:600;background:#ececec;color:#454545}.ru_badge--ok{background:#e0f2e9;color:#1c6b3c}.ru_badge--warn{background:#fdf0d5;color:#8a5b00}.ru_badge--error{background:#fbe3e4;color:#a41e22}.ru_badge--neutral{background:#e4ecf7;color:#23517c}.ru_linkBtn{background:none;border:none;color:#0066a1;cursor:pointer;padding:0;font-size:.85rem;text-decoration:underline}.ru_detailsCell{background:#fafafa;padding:12px 16px}.ru_details{margin:0}.ru_permissions{margin:4px 0 8px;font-size:.85rem}.ru_emptyMsg{color:#575757;font-style:italic}.ru_alert{padding:8px 12px;border-radius:3px;margin:8px 0;font-size:.9rem}.ru_alert--success{background:#e0f2e9;color:#1c6b3c;border:1px solid #b3dcc4}.ru_alert--error{background:#fbe3e4;color:#a41e22;border:1px solid #f0b8ba}.ru_actions{margin-top:12px;display:flex;gap:8px}.ru_dialogOverlay{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:1000}.ru_dialog{background:#fff;border-radius:6px;padding:20px 24px;max-width:480px;box-shadow:0 6px 24px rgba(0,0,0,.25)}.ru_dialogTitle{margin:0 0 8px;font-size:1.05rem;font-weight:600}.ru_dialogDesc{margin:0 0 8px}.ru_dialogWarning{margin:0 0 16px;padding:8px 12px;background:#fdf0d5;color:#8a5b00;border-radius:3px;font-size:.85rem}.ru_dialogActions{display:flex;justify-content:flex-end;gap:8px}.ru_dialogConfirmBtn{background:#a41e22;color:#fff;border:none;border-radius:3px;padding:6px 14px;cursor:pointer;font-weight:600}.ru_dialogCancelBtn{background:#ececec;color:#262626;border:none;border-radius:3px;padding:6px 14px;cursor:pointer}`, "",{"version":3,"sources":["webpack://./src/javascript/RolesUsage/RolesUsage.scss"],"names":[],"mappings":"AAAA,YACI,iBAAA,CACA,SAAA,CACA,UAAA,CACA,SAAA,CACA,WAAA,CACA,eAAA,CACA,qBAAA,CACA,kBAAA,CACA,QAAA,CAGJ,cACI,WAAA,CACA,eAAA,CACA,qBAAA,CACA,iBAAA,CAEA,mCACI,sBAAA,CACA,kBAAA,CAIR,YACI,gBAAA,CAGJ,eACI,eAAA,CACA,mBAAA,CACA,+BAAA,CAEA,kBACI,gBAAA,CACA,eAAA,CACA,QAAA,CACA,aAAA,CAIR,gBACI,aAAA,CACA,cAAA,CACA,aAAA,CAGJ,UACI,kBAAA,CACA,wBAAA,CACA,iBAAA,CACA,eAAA,CACA,oCAAA,CACA,eAAA,CAGJ,iBACI,iBAAA,CACA,kBAAA,CACA,+BAAA,CAEA,oBACI,iBAAA,CACA,eAAA,CACA,QAAA,CACA,aAAA,CAIR,cACI,YAAA,CAGJ,SACI,aAAA,CACA,gBAAA,CACA,iBAAA,CAGJ,YACI,cAAA,CAGJ,UACI,UAAA,CACA,wBAAA,CACA,gBAAA,CAEA,aACI,eAAA,CACA,gBAAA,CACA,+BAAA,CACA,kBAAA,CAGJ,aACI,gBAAA,CACA,+BAAA,CACA,kBAAA,CAIR,aACI,eAAA,CACA,kBAAA,CAGJ,aACI,oBAAA,CACA,qBAAA,CACA,eAAA,CAGJ,UACI,oBAAA,CACA,eAAA,CACA,gBAAA,CACA,kBAAA,CACA,gBAAA,CACA,eAAA,CACA,kBAAA,CACA,aAAA,CAGJ,cACI,kBAAA,CACA,aAAA,CAGJ,gBACI,kBAAA,CACA,aAAA,CAGJ,iBACI,kBAAA,CACA,aAAA,CAGJ,mBACI,kBAAA,CACA,aAAA,CAGJ,YACI,eAAA,CACA,WAAA,CACA,aAAA,CACA,cAAA,CACA,SAAA,CACA,gBAAA,CACA,yBAAA,CAGJ,gBACI,kBAAA,CACA,iBAAA,CAGJ,YACI,QAAA,CAGJ,gBACI,gBAAA,CACA,gBAAA,CAGJ,aACI,aAAA,CACA,iBAAA,CAGJ,UACI,gBAAA,CACA,iBAAA,CACA,YAAA,CACA,eAAA,CAGJ,mBACI,kBAAA,CACA,aAAA,CACA,wBAAA,CAGJ,iBACI,kBAAA,CACA,aAAA,CACA,wBAAA,CAGJ,YACI,eAAA,CACA,YAAA,CACA,OAAA,CAGJ,kBACI,cAAA,CACA,OAAA,CACA,0BAAA,CACA,YAAA,CACA,kBAAA,CACA,sBAAA,CACA,YAAA,CAGJ,WACI,eAAA,CACA,iBAAA,CACA,iBAAA,CACA,eAAA,CACA,qCAAA,CAGJ,gBACI,cAAA,CACA,iBAAA,CACA,eAAA,CAGJ,eACI,cAAA,CAGJ,kBACI,eAAA,CACA,gBAAA,CACA,kBAAA,CACA,aAAA,CACA,iBAAA,CACA,gBAAA,CAGJ,kBACI,YAAA,CACA,wBAAA,CACA,OAAA,CAGJ,qBACI,kBAAA,CACA,UAAA,CACA,WAAA,CACA,iBAAA,CACA,gBAAA,CACA,cAAA,CACA,eAAA,CAGJ,oBACI,kBAAA,CACA,aAAA,CACA,WAAA,CACA,iBAAA,CACA,gBAAA,CACA,cAAA","sourcesContent":[".ru_sr_only {\n    position: absolute;\n    width: 1px;\n    height: 1px;\n    padding: 0;\n    margin: -1px;\n    overflow: hidden;\n    clip: rect(0, 0, 0, 0);\n    white-space: nowrap;\n    border: 0;\n}\n\n.ru_container {\n    height: 100%;\n    overflow-y: auto;\n    box-sizing: border-box;\n    padding: 24px 32px;\n\n    button:focus-visible {\n        outline: 2px solid #0077cc;\n        outline-offset: 2px;\n    }\n}\n\n.ru_content {\n    max-width: 1100px;\n}\n\n.ru_pageHeader {\n    margin: 0 0 28px;\n    padding-bottom: 16px;\n    border-bottom: 2px solid #d9d9d9;\n\n    h2 {\n        font-size: 1.6rem;\n        font-weight: 600;\n        margin: 0;\n        color: #262626;\n    }\n}\n\n.ru_description {\n    display: block;\n    margin-top: 8px;\n    color: #575757;\n}\n\n.ru_panel {\n    margin-bottom: 28px;\n    border: 1px solid #d9d9d9;\n    border-radius: 4px;\n    background: #fff;\n    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);\n    overflow: hidden;\n}\n\n.ru_panelHeading {\n    padding: 12px 16px;\n    background: #f5f5f5;\n    border-bottom: 1px solid #d9d9d9;\n\n    h3 {\n        font-size: 1.05rem;\n        font-weight: 600;\n        margin: 0;\n        color: #262626;\n    }\n}\n\n.ru_panelBody {\n    padding: 16px;\n}\n\n.ru_hint {\n    color: #575757;\n    font-size: 0.85rem;\n    margin: 4px 0 12px;\n}\n\n.ru_loading {\n    padding: 16px 0;\n}\n\n.ru_table {\n    width: 100%;\n    border-collapse: collapse;\n    font-size: 0.85rem;\n\n    th {\n        text-align: left;\n        padding: 6px 10px;\n        border-bottom: 2px solid #d9d9d9;\n        white-space: nowrap;\n    }\n\n    td {\n        padding: 6px 10px;\n        border-bottom: 1px solid #ececec;\n        vertical-align: top;\n    }\n}\n\n.ru_roleName {\n    font-weight: 600;\n    white-space: nowrap;\n}\n\n.ru_pathCell {\n    word-break: break-all;\n    font-family: monospace;\n    font-size: 0.8rem;\n}\n\n.ru_badge {\n    display: inline-block;\n    padding: 1px 8px;\n    margin-right: 4px;\n    border-radius: 10px;\n    font-size: 0.75rem;\n    font-weight: 600;\n    background: #ececec;\n    color: #454545;\n}\n\n.ru_badge--ok {\n    background: #e0f2e9;\n    color: #1c6b3c;\n}\n\n.ru_badge--warn {\n    background: #fdf0d5;\n    color: #8a5b00;\n}\n\n.ru_badge--error {\n    background: #fbe3e4;\n    color: #a41e22;\n}\n\n.ru_badge--neutral {\n    background: #e4ecf7;\n    color: #23517c;\n}\n\n.ru_linkBtn {\n    background: none;\n    border: none;\n    color: #0066a1;\n    cursor: pointer;\n    padding: 0;\n    font-size: 0.85rem;\n    text-decoration: underline;\n}\n\n.ru_detailsCell {\n    background: #fafafa;\n    padding: 12px 16px;\n}\n\n.ru_details {\n    margin: 0;\n}\n\n.ru_permissions {\n    margin: 4px 0 8px;\n    font-size: 0.85rem;\n}\n\n.ru_emptyMsg {\n    color: #575757;\n    font-style: italic;\n}\n\n.ru_alert {\n    padding: 8px 12px;\n    border-radius: 3px;\n    margin: 8px 0;\n    font-size: 0.9rem;\n}\n\n.ru_alert--success {\n    background: #e0f2e9;\n    color: #1c6b3c;\n    border: 1px solid #b3dcc4;\n}\n\n.ru_alert--error {\n    background: #fbe3e4;\n    color: #a41e22;\n    border: 1px solid #f0b8ba;\n}\n\n.ru_actions {\n    margin-top: 12px;\n    display: flex;\n    gap: 8px;\n}\n\n.ru_dialogOverlay {\n    position: fixed;\n    inset: 0;\n    background: rgba(0, 0, 0, 0.45);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    z-index: 1000;\n}\n\n.ru_dialog {\n    background: #fff;\n    border-radius: 6px;\n    padding: 20px 24px;\n    max-width: 480px;\n    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);\n}\n\n.ru_dialogTitle {\n    margin: 0 0 8px;\n    font-size: 1.05rem;\n    font-weight: 600;\n}\n\n.ru_dialogDesc {\n    margin: 0 0 8px;\n}\n\n.ru_dialogWarning {\n    margin: 0 0 16px;\n    padding: 8px 12px;\n    background: #fdf0d5;\n    color: #8a5b00;\n    border-radius: 3px;\n    font-size: 0.85rem;\n}\n\n.ru_dialogActions {\n    display: flex;\n    justify-content: flex-end;\n    gap: 8px;\n}\n\n.ru_dialogConfirmBtn {\n    background: #a41e22;\n    color: #fff;\n    border: none;\n    border-radius: 3px;\n    padding: 6px 14px;\n    cursor: pointer;\n    font-weight: 600;\n}\n\n.ru_dialogCancelBtn {\n    background: #ececec;\n    color: #262626;\n    border: none;\n    border-radius: 3px;\n    padding: 6px 14px;\n    cursor: pointer;\n}\n"],"sourceRoot":""}]);
-// Exports
-___CSS_LOADER_EXPORT___.locals = {
-	"ru_sr_only": `ru_sr_only`,
-	"ru_container": `ru_container`,
-	"ru_content": `ru_content`,
-	"ru_pageHeader": `ru_pageHeader`,
-	"ru_description": `ru_description`,
-	"ru_panel": `ru_panel`,
-	"ru_panelHeading": `ru_panelHeading`,
-	"ru_panelBody": `ru_panelBody`,
-	"ru_hint": `ru_hint`,
-	"ru_loading": `ru_loading`,
-	"ru_table": `ru_table`,
-	"ru_roleName": `ru_roleName`,
-	"ru_pathCell": `ru_pathCell`,
-	"ru_badge": `ru_badge`,
-	"ru_badge--ok": `ru_badge--ok`,
-	"ru_badge--warn": `ru_badge--warn`,
-	"ru_badge--error": `ru_badge--error`,
-	"ru_badge--neutral": `ru_badge--neutral`,
-	"ru_linkBtn": `ru_linkBtn`,
-	"ru_detailsCell": `ru_detailsCell`,
-	"ru_details": `ru_details`,
-	"ru_permissions": `ru_permissions`,
-	"ru_emptyMsg": `ru_emptyMsg`,
-	"ru_alert": `ru_alert`,
-	"ru_alert--success": `ru_alert--success`,
-	"ru_alert--error": `ru_alert--error`,
-	"ru_actions": `ru_actions`,
-	"ru_dialogOverlay": `ru_dialogOverlay`,
-	"ru_dialog": `ru_dialog`,
-	"ru_dialogTitle": `ru_dialogTitle`,
-	"ru_dialogDesc": `ru_dialogDesc`,
-	"ru_dialogWarning": `ru_dialogWarning`,
-	"ru_dialogActions": `ru_dialogActions`,
-	"ru_dialogConfirmBtn": `ru_dialogConfirmBtn`,
-	"ru_dialogCancelBtn": `ru_dialogCancelBtn`
-};
-export default ___CSS_LOADER_EXPORT___;
+.ru_sr_only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.ru_container {
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 24px 32px;
+
+    button:focus-visible {
+        outline: 2px solid #0077cc;
+        outline-offset: 2px;
+    }
+}
+
+.ru_content {
+    max-width: 1100px;
+}
+
+.ru_pageHeader {
+    margin: 0 0 28px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #d9d9d9;
+
+    h2 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 0;
+        color: #262626;
+    }
+}
+
+.ru_description {
+    display: block;
+    margin-top: 8px;
+    color: #575757;
+}
+
+.ru_panel {
+    margin-bottom: 28px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.ru_panelHeading {
+    padding: 12px 16px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #d9d9d9;
+
+    h3 {
+        font-size: 1.05rem;
+        font-weight: 600;
+        margin: 0;
+        color: #262626;
+    }
+}
+
+.ru_panelBody {
+    padding: 16px;
+}
+
+.ru_hint {
+    color: #575757;
+    font-size: 0.85rem;
+    margin: 4px 0 12px;
+}
+
+.ru_loading {
+    padding: 16px 0;
+}
+
+.ru_table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+
+    th {
+        text-align: left;
+        padding: 6px 10px;
+        border-bottom: 2px solid #d9d9d9;
+        white-space: nowrap;
+    }
+
+    td {
+        padding: 6px 10px;
+        border-bottom: 1px solid #ececec;
+        vertical-align: top;
+    }
+}
+
+.ru_roleName {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.ru_pathCell {
+    word-break: break-all;
+    font-family: monospace;
+    font-size: 0.8rem;
+}
+
+.ru_badge {
+    display: inline-block;
+    padding: 1px 8px;
+    margin-right: 4px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: #ececec;
+    color: #454545;
+}
+
+.ru_badge--ok {
+    background: #e0f2e9;
+    color: #1c6b3c;
+}
+
+.ru_badge--warn {
+    background: #fdf0d5;
+    color: #8a5b00;
+}
+
+.ru_badge--error {
+    background: #fbe3e4;
+    color: #a41e22;
+}
+
+.ru_badge--neutral {
+    background: #e4ecf7;
+    color: #23517c;
+}
+
+.ru_linkBtn {
+    background: none;
+    border: none;
+    color: #0066a1;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0.85rem;
+    text-decoration: underline;
+}
+
+.ru_detailsCell {
+    background: #fafafa;
+    padding: 12px 16px;
+}
+
+.ru_details {
+    margin: 0;
+}
+
+.ru_permissions {
+    margin: 4px 0 8px;
+    font-size: 0.85rem;
+}
+
+.ru_emptyMsg {
+    color: #575757;
+    font-style: italic;
+}
+
+.ru_alert {
+    padding: 8px 12px;
+    border-radius: 3px;
+    margin: 8px 0;
+    font-size: 0.9rem;
+}
+
+.ru_alert--success {
+    background: #e0f2e9;
+    color: #1c6b3c;
+    border: 1px solid #b3dcc4;
+}
+
+.ru_alert--error {
+    background: #fbe3e4;
+    color: #a41e22;
+    border: 1px solid #f0b8ba;
+}
+
+.ru_actions {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+}
+
+.ru_dialogOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.ru_dialog {
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 24px;
+    max-width: 480px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+}
+
+.ru_dialogTitle {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.ru_dialogDesc {
+    margin: 0 0 8px;
+}
+
+.ru_dialogWarning {
+    margin: 0 0 16px;
+    padding: 8px 12px;
+    background: #fdf0d5;
+    color: #8a5b00;
+    border-radius: 3px;
+    font-size: 0.85rem;
+}
+
+.ru_dialogActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.ru_dialogConfirmBtn {
+    background: #a41e22;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 14px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.ru_dialogCancelBtn {
+    background: #ececec;
+    color: #262626;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 14px;
+    cursor: pointer;
+}
