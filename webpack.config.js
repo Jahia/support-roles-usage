@@ -47,6 +47,9 @@ module.exports = (env, argv) => {
                             loader: 'css-loader',
                             options: {
                                 modules: {
+                                    // css-loader 7 defaults to named exports; keep the default-export class map
+                                    namedExport: false,
+                                    exportLocalsConvention: 'as-is',
                                     localIdentName: '[local]'
                                 },
                                 sourceMap: isDev
