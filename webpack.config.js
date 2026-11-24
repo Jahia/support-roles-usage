@@ -98,6 +98,7 @@ module.exports = (env, argv) => {
                 ]
             }),
             new CycloneDxWebpackPlugin({
+                specVersion: '1.4',
                 outputLocation: './bom'
             })
         ],
